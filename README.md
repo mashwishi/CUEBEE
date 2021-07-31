@@ -35,6 +35,8 @@
 
 <strong><a href="https://discord.io/LIMYAW">CUEBEE</a></strong> is a Pre-made Minecraft Server 1.17.1 that supports Java Edition and Bedrock Edition to play in one running server. Java(PC/Laptop) players can join Bedrock users playing at PC/Laptop, Mobile Device, PlayStation 4 and Nintendo Switch.
 
+<img src="https://i.imgur.com/LHTxVDB.jpg" width="100%"/>
+
 ---
 
 ### Pre-made Set up Features:
