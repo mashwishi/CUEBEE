@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot"><img src="https://i.imgur.com/4Xau0yo.png" width="15%"/></a>
+<img src="https://i.imgur.com/4Xau0yo.png" width="15%"/></a>
   <h1>CUEBEE</h1>
 
   <h3>Version 1.0.0</h3>
@@ -50,6 +50,7 @@
 <h2 align="center">Setup Tutorial</h2>
 
 <div align="center">
+<p>Recommended Hosting (Not officially endorsed or sponsored by Pebblehost)</p>
   <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting" src="https://pebblehost.com/src/img/branding/banner1.gif"></a>
 </div>
 
@@ -110,6 +111,7 @@ CUEBEE Made by Mashwishi, project [Here](https://github.com/Mashwishi/CUEBEE)
 ---
 
 <div align="center">
+<p>Recommended Hosting (Not officially endorsed or sponsored by Pebblehost)</p>
   <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting" src="https://pebblehost.com/src/img/branding/banner1.gif"></a>
 </div>
 
