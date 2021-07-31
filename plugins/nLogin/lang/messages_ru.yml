@@ -1,0 +1,500 @@
+#          __             _
+#  _ __   / /  ___   __ _(_)_ __
+# | '_ \ / /  / _ \ / _` | | '_ \
+# | | | / /__| (_) | (_| | | | | |
+# |_| |_\____/\___/ \__, |_|_| |_|
+#                   |___/
+
+# Официальный сайт: https://www.nickuc.com
+# Discord: https://www.nickuc.com/discord
+
+# Russian translation made by Vadimus#3081 <3
+
+# Do not change this setting
+file-version: 5
+
+Messages:
+  Title:
+    # Сообщение отправляется перед входом в систему
+    before-login:
+      title: "&a&lДобро пожаловать!"
+      subtitle: "&7Использование: /login <пароль>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Сообщение отправляется перед регистрацией
+    before-register:
+      title: "&a&lДобро пожаловать!"
+      subtitle: "&7Использование: /register <пароль> <повтор пароля>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Сообщение отправляется после успешного входа в систему
+    after-login:
+      title: ""
+      subtitle: "&aВы успешно зашли!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется после успешной регистрации
+    after-register:
+      title: ""
+      subtitle: "&aВы успешно зарегистрировались!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, если введён неверный пароль
+    incorrect-password:
+      title: ""
+      subtitle: "&cНеправильный пароль!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда вы уже вошли в систему
+    already-login:
+      title: ""
+      subtitle: "&cВы уже вошли в аккаунт!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда вы уже зарегистрированы
+    already-registered:
+      title: ""
+      subtitle: "&cВы уже зарегистрированы!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда пароль не совпадает с предыдущим 
+    passwords-dont-match:
+      title: ""
+      subtitle: "&cПароль не совпадает с предыдущим!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда ваш сеанс входа продливается
+    session-login:
+      title: ""
+      subtitle: "&eВаш сеанс входа в аккаунт был продолён."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда игрок заходит с лицензионным аккаунтом
+    premium-login:
+      title: ""
+      subtitle: "&eВаш аккаунт лицензионный, вы успешно зашли."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение отправляется, когда произошла перезагрузка плагина
+    plugin-reload:
+      title: ""
+      subtitle: "&aНастройки и языковые файлы перезагружены."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Сообщение, отправленое системой восстановления резервных копий
+    backup:
+      title: ""
+      subtitle: "&aРезервная копия успешно создана."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Сообщение отправляется, когда система восстановления резервных копий не может выполнить копирование
+    backup-error:
+      title: ""
+      subtitle: "&cНевозможно выполнить резервное копирование."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Сообщение от системы безопасности
+    security-warning:
+      title: ""
+      subtitle: "&cСообщение с предупреждением безопасности отправлено в чат"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+
+  action-bar:
+    # Сообщение, отображаемое на панели действий игрока перед входом в систему (единственное число)
+    singular: "&cУ вас есть {0} секунда {для входа/на регистрацию}."
+
+    # Сообщение, отображаемое на панели действий игрока перед входом в систему (множественное число)
+    plural: "&cУ вас есть {0} секунды на {вход/регистрацию}."
+
+  delay-kick:
+    # Сообщение отправляется, когда игрок слишком долго регистрируется
+    register-kick: "&cВремя регистрации истекло."
+
+    # Сообщение отправляется, когда игрок слишком долго входит в аккаунт
+    login-kick: "&cВы слишком долго входили в аккаунт."
+
+  successful-operations:
+    # Сообщение отправляется, когда игрок меняет свой пароль
+    password-changed: "&aВаш пароль был успешно изменён."
+
+    # Сообщение отправляется, когда игрок успешно входит в аккаунт
+    successful-login: "&aВы успешно вошли в аккаунт."
+
+    # Сообщение отпраляется, когда игрок входит в систему с с учётной записью премиум класса
+    successful-premium-login: "&aВы автоматически зашли так как используете лицензионный аккаунт."
+
+    # Сообщение отправляется, когда пользователь входит в систему с лицензионной учётной записью
+    successful-session-login: "&aВаш сеанс входа с премиум аккаунтом был продолён."
+
+    # Сообщение отправляется, когда игрок успешно регистрируется
+    successful-register: "&aВы успешно зарегистрировались."
+
+    # Сообщение, отправляемое при принудительном входе игрока в систему (Консоль)
+    forcelogin: "&e{0} Заставил вас заного ввести пароль"
+
+    # Сообщение отправляется, когда игрок удаляет свой аккаунт
+    unregister-kick: "&aРегистрация аккаунта успешно отозвана."
+
+    # Сообщение, отправленное после завершения настрйоки конфигурации. (Не уверен, что перевод правильный)
+    config-finished: "&aНастройка конфигурации завершена."
+
+    # Сообщение, отправленное при отмене настройки конфигурации. (Не уверен, что перевод правильный)
+    config-cancelled: "&cНастройка конфигурации отменена."
+
+  kick-messages:
+    # Сообщение отправляется, когда игрок пытается зайти на сервер с маленькой разницей в нике
+    nick-already-registered: "&cВы не можете войти с ником {0}&r\n&r&cЭто имя пользователя уже зарегистрировано как {1}&r\n&r\n&r&cДля входа вы должны использовать свой никнейм без прописых/строчных букв"
+
+    # Сообщение отправляется, когда игрок слишком много раз вводит неправильный пароль
+    failed-many-times: "&cВы слишком много раз ввели неправильный пароль."
+
+    # Сообщение отправляется, когда игрок вводит неправильный пароль
+    incorrect-password: "&cНеправильный пароль! Попытайтесь снова."
+
+    # Сообщение отправляется, если ответ на контрольный вопрос неверен.
+    incorrect-answer: "&cНеправильный ответ. Пожалуйста, попробуйте еще раз."
+
+    # Сообщение выводится, если сервер всё-ещё находится в процессе запуска.
+    wait-server-start: "&cСервер в процессе запуска.\n&cПодождите его полной загрузки."
+
+    # Сообщение отправляется, если IP-адрес игрока заблокирован за подозрительную активность
+    account-blocked: "&cВаш IP-вдрес подозревается в атаке и был заблокирован.&r\n&r&cОставшееся время до разблокировки: {0}"
+
+    # Сообщение отправляется, если временный пароль, который сгенерировала  двухфакторная система аунтентификации введён не верно.
+    incorrect-temporary-password: "&cВы ввели неверный пароль. Попробуйте снова."
+
+    # Сообщение отправляется, когда игрока с неправильным ником кикакет с сервера. Пример неправильного ника: (Test^^?)
+    invalid-nickname: "&cВаш никнейм неправильный, уберите пробелы, различные символы из вашего никнейма. Примеры запрещённых символов:<|}-+#$@."
+
+    # Сообщение отправляется, когда аккаунт игрока уже зарегистрирован как уникальный
+    premium-account: "&cПремиум-пользователь уже вошел в эту учетную запись.&r\n&r&cДля игры на сервере необходимо использовать другой ник.&r\n&r\nЕсли вы являетесь владельцем этой учетной записи, попробуйте перезапустить Minecraft."
+
+  security-messages:
+    # Сообщение отправляется, когда пользователь был защищён системой безопасности
+    hacking-attack-warning:
+      - ""
+      - " &c&lПРЕДУПРЕЖДЕНИЕ СИСТЕМЫ БЕЗОПАСНОСТИ"
+      - " &cСистема безопасности заблокировала возможную хакерскую атаку на ваш аккаунт."
+      - " &cБыло выполнено три неудачных попытки входа."
+      - ""
+      - " &e&lСовет: &eИспользуйте РАЗЛИЧНЫЕ пароли на ВСЕХ серверах."
+      - ""
+
+    # Сообщение отправляется, когда пользователь второй раз был защищён системой безопасности
+    hacking-attack-warning2:
+      - ""
+      - " &c&lПРЕДУПРЕЖДЕНИЕ СИСТЕМЫ БЕЗОПАСНОСТИ"
+      - " &cСистема безопасности заблокировала {0} возможных хакерских атаки на ваш аккаунт."
+      - " &cБыло выполнено три неудачных попытки входа."
+      - ""
+      - " &e&lСовет: &eИспользуйте РАЗЛИЧНЫЕ пароли на ВСЕХ серверах и аккаунтах."
+      - ""
+
+    # Сообщение отправляется, когда пользователь использует "слабый" пароль
+    weak-password:
+      - ""
+      - " &cВаш пароль считается недостаточно безопасным."
+      - " &cИспользуйте буквы, цифры и символы для большей безопасности."
+      - " &cПример хорошего пароля: {0}"
+      - ""
+
+    # Сообщение, отправляется, когда игрок еще не назначил защитные вопросы.
+    security-question-warn-message:
+      - ""
+      - " &c&lЗАЩИТНЫЕ ВОПРОСЫ"
+      - " &7Нажмите на это сообщение, чтобы зарегистрировать"
+      - " &cвопросы при входе.&7 Таким образом вы"
+      - " &7уменьшите шанс взлома своего аккаунта."
+      - ""
+
+    # Сообщение, отправляется при добавлении защитного вопроса.
+    security-question-add:
+      - ""
+      - " &e{0}"
+      - ""
+      - " &7Введите &f'cancel'&7, чтобы отменить операцию."
+      - " &7Щелкните на это сообщение, чтобы сгенерировать еще один вопрос."
+      - ""
+
+    # Сообщение, отправлется при рассмотрении защитного вопроса.
+    security-question-check:
+      - ""
+      - " &aПеред подтверждением просмотрите информацию:"
+      - ""
+      - " &7{0}: &f'{1}'"
+      - ""
+      - " &aЕсли Вы уверены, введите &f'confirm'&a."
+      - " &eЕсли Вы ввели что-то неправильно, введите &f'repeat'&e."
+      - " &cЕсли Вы хотите отменить операцию, введите &f'cancel'&c."
+      - ""
+
+    # Сообщение, отправляется при запросе защитного вопроса.
+    security-question-request:
+      - ""
+      - " &aИзвините, но требуется подтверждение личности."
+      - " &aОтветьте на вопрос в чате ниже:"
+      - ""
+      - " &b{0}"
+      - ""
+
+    # Сообщение, отправляется при повторном запросе защитного вопроса.
+    security-question-request2:
+      - "&aСледующий вопрос..."
+      - ""
+      - " &b{0}"
+      - ""
+
+  error-messages:
+    # Сообщение отправлено, когда вы уже вошли в систему.
+    already-login: "&cВы уже вошли в аккаунт."
+
+    # Сообщение отправляется, когда пользователь уже вошел в систему.
+    already-login2: "&cЭтот игрок уже вошёл в аккаунт."
+
+    # Сообщение отправляется, когда ник уже зарегистрирован.
+    already-registered: "&cЭто имя пользователя уже зарегистрировано."
+
+    # Сообщение отправляется, когда ник еще не зарегистрирован.
+    not-registered: "&cЭтот ник еще не зарегистрирован."
+
+    # Сообщение отправляется, когда первый пароль не соответствует второму паролю
+    passwords-dont-match: "&cПароли не совпадают."
+
+    # Сообщение отправляется, когда игрок не подтвердил свой пароль
+    need-password-confirmation: "&cВы должны подтвердить свой пароль."
+
+    # Сообщение отправляется, когда у пользователя нет временного пароля.
+    no-temporary-password: "&cВременный пароль еще не сгенерирован."
+
+    # Сообщение отправляется, когда игрок исчерпал лимит регистрации аккаунтов с одинаковым IP-адресом
+    address-limiter-warning: "&cВы исчерпали лимит регистрации аккаунтов."
+
+    # Сообщение отправляется, когда игрок пытается сменить пароль, вводя тот же пароль, что и текущий
+    password-same-as-old: "&cВведённый пароль совпадает с текущим."
+
+    # Сообщение отправляется, когда игрок вводит слишком длинный пароль
+    password-too-large: "&cВы ввели слишком длинный пароль."
+
+    # Сообщение отправляется, когда игрок вводит слишком короткий пароль
+    password-too-small: "&cВы ввели слишком короткий пароль."
+
+    # Сообщение отправляется, когда пользователь пытается отключить систему nLogin используя PlugMan
+    plugman-block: "&cВы не можете управлять плагином nLogin с помощью PlugMan."
+
+    # Сообщение отправляется, когда у игрока недостаточно прав для использования какой-либо команды
+    insufficient-permissions: "&cУ вас нет прав для использования этой команды."
+
+    # Сообщение, показывающее использование команды
+    command-usage: "&cИспользуйте {0}."
+
+    # Сообщение выводится, когда игрока кикает из-за того, что он уже зашёл на сервер
+    already-online: "&cЭтот игрок уже зашёл на сервер."
+
+    # Сообщение отоображается, когда игрок в данный момент не в сети
+    offline-error: "&cНужный вам игрок сейчас не в сети."
+
+    # Сообщение отправляется, если эту команду нельзя выполнить в консоли
+    player-command-usage: "&cЭту команду нельзя использовать в консоли."
+
+    # Сообщение отправляется, если команда модет быть использована только из консоли
+    console-command-usage: "&cЭту команду можно использовать только из консоли."
+
+    # Сообщение отправляется после перезагрузки плагина
+    plugin-reload-message: "&enLogin успешно перезагружен."
+
+    # Сообщение отправляется, когда игрок пытается использовать команду, которая была отключена в конфигурации
+    command-function-disabled: "&cКоманда {0} отключена."
+
+    # Сообщение отправляется, если операция с базой данных не была успешно выполнена
+    database-error: "&cК сожалению, нам не удалось выполнить эту операцию. Пожалуйста, попробуйте еще раз. [SQL FAIL]"
+
+  notifications:
+    # Message sent when all notifications have been read.
+    all-viewed: "&aВсе уведомления были просмотрены."
+
+    # Message sent when the notification will be sent after X minutes.
+    notify-after: "&eЭто уведомление будет отправлено повторно через {0} минут."
+
+    # Name of the buttons sent in the notifications.
+    notify-buttons: "[&aПодтвердить прочтение//&8Напомнить позже]"
+
+    # Message when hovering over the buttons sent in the notifications.
+    notify-buttons-hover: "[&7Нажмите, чтобы отметить это уведомление как прочитанное.//&7Нажмите, чтобы напомнить об этом уведомлении позже.]"
+
+  twofactor:
+    # Message sent when a user does not have a temporary password.
+    no-temporary-password: "&cA temporary password has not yet been generated."
+
+    # Message sent when a user does not have a linked account.
+    no-twofactor-registered: "&cYou do not have a {0} account."
+
+    # Message sent when a user has already linked an account.
+    twofactor-already-registered: "&cYou have already registered your {0}."
+
+    # Message sent when a user removes their account from two factors.
+    twofactor-unregistered: "&eYour {0} was successfully disassociated"
+
+    # Message sent when a user confirms their two-factor account.
+    confirmed-account: "&aYour {0} account has been successfully registered"
+
+    # Message sent when a confirmation message is sent.
+    confirmation-message-sent: "&7A confirmation code was sent to your {0} (&f{1}&7)."
+
+    # Message sent when a user requests a new message in a short period of time.
+    check-message: "&aCheck the message sent to your associated account."
+
+    # Message sent when the player must wait to use the command again.
+    command-delay: "&cWait a while before executing this command again."
+
+    # Two-factor help message.
+    help-command:
+      - ""
+      - " &fStatus: [&a{2} registered//&c{2} not registered]&f."
+      - ""
+      - " [&a■ &7/{0} add: &fRegister your {1}.]"
+      - " [&a■ &7/{0} remove: &fRemove your {1}.]"
+      - " [&a■ &7/{0} recover: &fRecover your account.]"
+      - " [&a■ &7/{0} twofactor: &fEnables/disables the two-factor.]"
+      - ""
+
+    switch:
+      # Message sent when a user activates the two-factor.
+      enabled: "&aThe two-factor feature has been activated."
+
+      # Message sent when a user disables the two-factor.
+      disabled: "&cThe two-factor feature has been deactivated."
+
+    recover:
+      # Message sent when a user does not provide the same two-factor account registered.
+      twofactor-not-equal: "&cThe {0} provided is not the same as the registered one."
+
+      # Message sent when a user requests a recovery request in a short period of time.
+      message-sent: "&aA recovery message was sent to your associated account."
+
+      # Message sent when a user recovers his account and his password is set automatically.
+      automatic-change: "&aYour password was automatically changed to &f'{0}'&a."
+
+    security-questions:
+      # Message sent when a user has not registered any security questions yet.
+      no-question-registered: "&cYou have not yet registered any security questions."
+
+      # Message sent when the question id is invalid.
+      invalid-question-id: "&cThe id entered is not valid or is less than or equal to zero."
+
+      # Message sent when a question does not exist.
+      question-does-not-exists: "&cThe question with the id {0} does not exist."
+
+      # Message sent when a question is deleted.
+      question-deleted: "&aThe question with the id {0} has been successfully removed."
+
+      # Message sent when a user has exhausted the maximum of security questions registered.
+      max-questions: "&cYou have exhausted the limit of security questions allowed on this server."
+
+      # Message sent when a user does not have the minimum security questions registered to recover the account.
+      min-questions-recover: "&cYou need to have at least 3 questions registered to recover your account."
+
+      # Security questions help message
+      help-command:
+        - ""
+        - " &fStatus: [&cNo questions registered//&a{1} question registered//&a{1} questions registered]&f."
+        - ""
+        - " [&a■ &7/{0} add: &fRegister a question.]"
+        - " [&a■ &7/{0} remove <id>: &fRemoves a question.]"
+        - " [&a■ &7/{0} list: &fLists your questions.]"
+        - " [&a■ &7/{0} recover: &fRecovers your account.]"
+        - ""
+
+    discord:
+      # Message sent when a user needs to confirm the Discord account.
+      confirm-account:
+        - ""
+        - " &7To complete the linking, you need to confirm your Discord account."
+        - " &7Join to &b{0} &7and type "
+        - " &7the command in the DM of the &f{1} &7bot."
+        - ""
+        - " [&aClick here to get the command with the token.]"
+        - ""
+
+      # Message sent when a user links his Discord account.
+      account-linked: "&aConfiguration in Discord successfully updated.\n&aYou have been linked with &f{0} &aaccount."
+
+    twitter:
+      # Message sent when the provided twitter is invalid.
+      invalid-account: "&cThe entered twitter is invalid."
+
+      # Message sent when the supplied twitter is the same as the server's.
+      server-twitter: "&cYou cannot use the server's twitter."
+
+    email:
+      # Message sent when the e-mail provided is invalid.
+      invalid-account: "&cThe entered email is invalid."
+
+      # Message sent when the supplied email is the same as the server's.
+      server-email: "&cYou cannot use the server's email."
+
+  premium-login:
+    # Message sent when a premium login notification is sent to the player.
+    question:
+      - ""
+      - " &eИспользуете ли вы премиум-аккаунт?"
+      - " &7(после принятия вам нужно будет заново войти в систему)."
+      - ""
+      - "[&aДа//&cНет]"
+      - ""
+
+    # Message sent when the player's account is already premium.
+    already-premium: "&cВаша учетная запись уже отмечена как премиум."
+
+    # Message sent when the player starts the premium login challenge.
+    challenge-kick: "&7Чтобы подтвердить, что вы используете &aпремиум-аккаунт&7, пожалуйста, войдите в систему еще раз."
+
+  other-messages:
+    # Сообщение отображается при наведении курсора, быстрое завершение команды для входа
+    hover-message-login: "&7Нажмите сюда, чтобы завершить команду и быстро войти."
+
+    # Сообщение отображается при наведении курсора, быстрое завершение команды регистрации
+    hover-message-register: "&7Нажмите сюда, чтобы завершить команду и быстро зарегистрироваться."
+
+    # Сообщение для использования команды /login
+    message-login: "&eВведите: &7/login <пароль>&e."
+
+    # Сообщения для использования команды /register
+    message-register: "&eВведите: &7/register <пароль> <повтор пароля>&e."
+
+    # Сообщение для команды смены пароля /changepassword
+    message-changepassword: "&eВведите: &7/changepassword <текущий пароль> <новый пароль>&e."
+
+    # Сообщение для использования команды /checkprofile
+    message-verify: "&eВведите: &7/checkprofile <игрок>&e."
+
+    # Сообщение отправлено для использования команды /unregister
+    message-unregister: "&eИспользуйте команду &7/unregister <текущий пароль>&e."

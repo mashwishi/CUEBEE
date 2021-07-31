@@ -1,0 +1,500 @@
+#          __             _
+#  _ __   / /  ___   __ _(_)_ __
+# | '_ \ / /  / _ \ / _` | | '_ \
+# | | | / /__| (_) | (_| | | | | |
+# |_| |_\____/\___/ \__, |_|_| |_|
+#                   |___/
+
+# Official Website: https://www.nickuc.com
+# Discord: https://www.nickuc.com/discord
+
+# French translation by bananas007 <3
+
+# Do not change this setting
+file-version: 6
+
+Messages:
+  Title:
+    # Message sent before login.
+    before-login:
+      title: "&4&lBienvenue"
+      subtitle: "&7/login <MDP>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Message sent before registration.
+    before-register:
+      title: "&4&lBienvenue"
+      subtitle: "&7/register <MDP> <MDP>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Message sent after login.
+    after-login:
+      title: ""
+      subtitle: "&aTu as été connecté avec succès!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent after registration.
+    after-register:
+      title: ""
+      subtitle: "&aTu as été enregistré avec succès!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when you miss a password.
+    incorrect-password:
+      title: ""
+      subtitle: "&cMauvais mot de passe!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when already logged in.
+    already-login:
+      title: ""
+      subtitle: "&cTu es déja connecté!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when already registered.
+    already-registered:
+      title: ""
+      subtitle: "&cTu es déja enregistré!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when passwords are not equal.
+    passwords-dont-match:
+      title: ""
+      subtitle: "&cLe mot de passe ne correspond pas!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when session is continued.
+    session-login:
+      title: ""
+      subtitle: "&eVotre session de connexion s'est poursuivie."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when you are an original player.
+    premium-login:
+      title: ""
+      subtitle: "&eVotre compte est unique, connecté avec succès."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when a login session is continued.
+    plugin-reload:
+      title: ""
+      subtitle: "&aLes fichiers de configuration et de langue ont été rechargés."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent from backup system.
+    backup:
+      title: ""
+      subtitle: "&aSauvegarde effectuée avec succès."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Message sent from backup system.
+    backup-error:
+      title: ""
+      subtitle: "&cImpossible d'effectuer la sauvegarde."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Message sent from security system.
+    security-warning:
+      title: ""
+      subtitle: "&cUne nouvelle alerte de sécurité a été envoyée dans le chat"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+
+  action-bar:
+    # Message sent on the player's actionbar before login (singular).
+    singular: "&cVous avez {0} seconde pour {login/register}."
+
+    # Message sent on the player's actionbar before login (plural).
+    plural: "&cVous avez {0} secondes pour {login/register}."
+
+  delay-kick:
+    # Message sent when a user takes a long time to register.
+    register-kick: "&cVous avez mis trop de temps à vous inscrire."
+
+    # Message sent when a user takes a long time to log in.
+    login-kick: "&cVous avez mis trop de temps à vous connecter."
+
+  successful-operations:
+    # Message when a user exchanges their password.
+    password-changed: "&aVotre mot de passe a été changé avec succès."
+
+    # Message sent when a user successfully logs.
+    successful-login: "&aVous vous êtes connecté avec succès."
+
+    # Message sent when a user logs in with an original account.
+    successful-premium-login: "&aVous êtes automatiquement connecté car vous utilisez un compte unique."
+
+    # Message sent when a user logs in using the same ip address.
+    successful-session-login: "&aVotre session de connexion s'est poursuivie."
+
+    # Message sent when a user successfully registers.
+    successful-register: "&aVous vous êtes inscrit avec succès."
+
+    # Message sent when you force a player's login.
+    forcelogin: "&eVous avez forcé la connexion de {0}"
+
+    # Message sent when a player successfully unregister.
+    unregister-kick: "&aVous vous êtes désinscrit avec succès."
+
+    # Message sent when a configuration is finished
+    config-finished: "&aConfiguration finalisée."
+
+    # Message sent when a configuration is cancelled
+    config-cancelled: "&cAction annulée."
+
+  kick-messages:
+    # Message when a player tries to log on to the server with a small difference in the nickname.
+    nick-already-registered: "&cVous ne pouvez pas entrer avec le surnom {0}&r\n&r&cCe nom d'utilisateur a déjà été enregistré sous le nom {1}&r\n&r\n&r&cPour entrer, vous devez utiliser votre surnom sans majuscules / minuscules"
+
+    # Message sent when a user misses many times.
+    failed-many-times: "&cVous avez entré un mot de passe incorrect."
+
+    # Message sent when password entered is incorrect.
+    incorrect-password: "&cMot de passe incorrect. Veuillez réessayer."
+
+    # Message sent when the security questions answer is incorrect.
+    incorrect-answer: "&cRéponse incorrecte. Veuillez réessayer."
+
+    # Message sent when server is still starting.
+    wait-server-start: "&cLe serveur n'a pas encore complètement démarré.\n&cAttendez un peu pour vous connecter."
+
+    # Message sent when an IP is blocked by suspected invasion.
+    account-blocked: "&cVotre adresse a été bloquée par une invasion présumée.&r\n&r&cTemps de bannissement restant: {0}"
+
+    # Message sent when two-factor system temporary password is incorrect.
+    incorrect-temporary-password: "&cMot de passe incorrect. Veuillez réessayer."
+
+    # Message to kick a user with an invalid nickname.
+    invalid-nickname: "&cVotre pseudo n'est pas valide, supprimez les espaces, les symboles et les caractères non valides de votre nom."
+
+    # Message sent when the player's account has already been registered as unique.
+    premium-account: "&cDésolé, mais un utilisateur premium s'est déjà connecté à ce compte.&r\n&r&cPour jouer sur le serveur, vous devez utiliser un autre pseudo.&r\n&r\nSi vous êtes le propriétaire de ce compte, essayez de redémarrer votre Minecraft."
+
+  security-messages:
+    # Message sent when a user was protected by the heuristic system.
+    hacking-attack-warning:
+      - ""
+      - " &c&lALERTE"
+      - " &cLe système de sécurité a bloqué une éventuelle attaque de piratage sur votre compte."
+      - " &cTrois tentatives de connexion infructueuses ont été effectuées."
+      - ""
+      - " &e&lTIP: &eUtilise des mots de passe différents des autres serveurs."
+      - ""
+
+    # Message sent when a user was protected more than once by the heuristic system.
+    hacking-attack-warning2:
+      - ""
+      - " &c&lALERTE"
+      - " &cLe système de sécurité a bloqué {0} attaques de piratage possibles sur votre compte."
+      - " &cTrois tentatives de connexion infructueuses ont été effectuées."
+      - ""
+      - " &e&lTIP: &eUtilise des mots de passe différents des autres serveurs."
+      - ""
+
+    # Message sent when a user uses a weak password.
+    weak-password:
+      - ""
+      - " &cLe mot de passe enregistré est considéré comme dangereux."
+      - " &cUtilisez des lettres, des chiffres et des symboles pour améliorer la sécurité."
+      - " &cExemple de mot de passe: {0}"
+      - ""
+
+    # Message sent when a player has not yet registered the security questions.
+    security-question-warn-message:
+      - ""
+      - " &c&lQUESTIONS"
+      - " &7Cliquez sur ce message pour vous inscrire"
+      - " &caux questions de sécurité&7. En faisant cela, vous"
+      - " &7diminuer le risque d'être piraté."
+      - ""
+
+    # Message sent when a security question is being added.
+    security-question-add:
+      - ""
+      - " &e{0}"
+      - ""
+      - " &7Écris &f'cancel' &7pour annuler l'opération."
+      - " &7Cliquez sur ce message pour générer une autre question."
+      - ""
+
+    # Message sent when a security question should be reviewed.
+    security-question-check:
+      - ""
+      - " &aAvant de confirmer, vérifiez les informations:"
+      - ""
+      - " &7{0}: &f'{1}'"
+      - ""
+      - " &aSi vous êtes sûr, tapez &f'confirm'&a."
+      - " &eSi vous avez entré quelque chose de mal, tapez &f'repeat'&e."
+      - " &cSi vous souhaitez annuler cette opération, tapez &f'cancel'&c."
+      - ""
+
+    # Message sent when security questions are requested.
+    security-question-request:
+      - ""
+      - " &aDésolé, mais une confirmation d'identité est requise."
+      - " &aRépondez à la question ci-dessous dans le chat:"
+      - ""
+      - " &b{0}"
+      - ""
+
+    # Message sent when security questions are requested a second time.
+    security-question-request2:
+      - "&aProchaine question..."
+      - ""
+      - " &b{0}"
+      - ""
+
+  error-messages:
+    # Message sent when you are already logged in.
+    already-login: "&cVous êtes déjà connecté."
+
+    # Message sent when a user is already logged in.
+    already-login2: "&cCe joueur est déjà connecté."
+
+    # Message sent when a nickname has already been registered.
+    already-registered: "&cCe pseudo a déjà été enregistré."
+
+    # Message sent when a nickname has not yet been registered.
+    not-registered: "&cCe pseudo n'a pas encore été enregistré."
+
+    # Message sent when the entered password is not equal to the second.
+    passwords-dont-match: "&cLes mots de passe ne sont pas les mêmes."
+
+    # Message sent when a player does not confirm your password.
+    need-password-confirmation: "&cVous devez confirmer votre mot de passe."
+
+    # Message sent when a user does not have a temporary password.
+    no-temporary-password: "&cUn mot de passe temporaire n'a pas encore été généré."
+
+    # Message sent when IP limits per player pass the limit.
+    address-limiter-warning: "&cVous avez épuisé les limites de votre adresse IP."
+
+    # Message sent when a player tries to change password by entering the same password as the current.
+    password-same-as-old: "&cLe mot de passe saisi est le même que celui entrer."
+
+    # Message sent when the password entered is too large.
+    password-too-large: "&cLe mot de passe saisi est trop volumineux."
+
+    # Message sent when the password entered is too small.
+    password-too-small: "&cLe mot de passe saisi est trop petit."
+
+    # Message sent when a user attempts to disable nLogin using PlugMan/System.
+    plugman-block: "&cVous ne pouvez pas toucher le plugin de connexion ici."
+
+    # Message when a player does not possess the required permission.
+    insufficient-permissions: "&cVous n'êtes pas autorisé à exécuter cette commande."
+
+    # Message to show the use of a command.
+    command-usage: "&cTu dois utiliser {0}."
+
+    # Message to kick a player now online.
+    already-online: "&cCe joueur est déjà en ligne."
+
+    # Message to display that a player is not online.
+    offline-error: "&cLe joueur souhaité est hors ligne."
+
+    # Message to show that the command cannot be executed via console.
+    player-command-usage: "&cCette commande ne peut être utilisée que via la console."
+
+    # Message to show that a command can only be executed by the console.
+    console-command-usage: "&cCette commande ne peut être utilisée que via la consolee."
+
+    # Message shown when the plugin is reloaded.
+    plugin-reload-message: "&eLe plugin a été rechargé avec succès."
+
+    # Message shown when the function of a command is disabled.
+    command-function-disabled: "&cLa fonction de la commande {0} est désactivée."
+
+    # Message sent when a database operation has not been successfully performed.
+    database-error: "&cDésolé, nous n'avons pas pu terminer cette opération. Veuillez réessayer. [SQL FAIL]"
+
+  notifications:
+    # Message sent when all notifications have been read.
+    all-viewed: "&aToutes les notifications ont été consultées."
+
+    # Message sent when the notification will be sent after X minutes.
+    notify-after: "&eCette notification sera à nouveau envoyée après {0} minutes."
+
+    # Name of the buttons sent in the notifications.
+    notify-buttons: "[&aConfirmer la lecture//&8Me rappeler plus tard]"
+
+    # Message when hovering over the buttons sent in the notifications.
+    notify-buttons-hover: "[&7Cliquez pour marquer cette notification comme lue.//&7Cliquez pour vous souvenir de cette notification plus tard.]"
+
+  twofactor:
+    # Message sent when a user does not have a temporary password.
+    no-temporary-password: "&cA temporary password has not yet been generated."
+
+    # Message sent when a user does not have a linked account.
+    no-twofactor-registered: "&cYou do not have a {0} account."
+
+    # Message sent when a user has already linked an account.
+    twofactor-already-registered: "&cYou have already registered your {0}."
+
+    # Message sent when a user removes their account from two factors.
+    twofactor-unregistered: "&eYour {0} was successfully disassociated"
+
+    # Message sent when a user confirms their two-factor account.
+    confirmed-account: "&aYour {0} account has been successfully registered"
+
+    # Message sent when a confirmation message is sent.
+    confirmation-message-sent: "&7A confirmation code was sent to your {0} (&f{1}&7)."
+
+    # Message sent when a user requests a new message in a short period of time.
+    check-message: "&aCheck the message sent to your associated account."
+
+    # Message sent when the player must wait to use the command again.
+    command-delay: "&cWait a while before executing this command again."
+
+    # Two-factor help message.
+    help-command:
+      - ""
+      - " &fStatus: [&a{2} registered//&c{2} not registered]&f."
+      - ""
+      - " [&a■ &7/{0} add: &fRegister your {1}.]"
+      - " [&a■ &7/{0} remove: &fRemove your {1}.]"
+      - " [&a■ &7/{0} recover: &fRecover your account.]"
+      - " [&a■ &7/{0} twofactor: &fEnables/disables the two-factor.]"
+      - ""
+
+    switch:
+      # Message sent when a user activates the two-factor.
+      enabled: "&aThe two-factor feature has been activated."
+
+      # Message sent when a user disables the two-factor.
+      disabled: "&cThe two-factor feature has been deactivated."
+
+    recover:
+      # Message sent when a user does not provide the same two-factor account registered.
+      twofactor-not-equal: "&cThe {0} provided is not the same as the registered one."
+
+      # Message sent when a user requests a recovery request in a short period of time.
+      message-sent: "&aA recovery message was sent to your associated account."
+
+      # Message sent when a user recovers his account and his password is set automatically.
+      automatic-change: "&aYour password was automatically changed to &f'{0}'&a."
+
+    security-questions:
+      # Message sent when a user has not registered any security questions yet.
+      no-question-registered: "&cYou have not yet registered any security questions."
+
+      # Message sent when the question id is invalid.
+      invalid-question-id: "&cThe id entered is not valid or is less than or equal to zero."
+
+      # Message sent when a question does not exist.
+      question-does-not-exists: "&cThe question with the id {0} does not exist."
+
+      # Message sent when a question is deleted.
+      question-deleted: "&aThe question with the id {0} has been successfully removed."
+
+      # Message sent when a user has exhausted the maximum of security questions registered.
+      max-questions: "&cYou have exhausted the limit of security questions allowed on this server."
+
+      # Message sent when a user does not have the minimum security questions registered to recover the account.
+      min-questions-recover: "&cYou need to have at least 3 questions registered to recover your account."
+
+      # Security questions help message
+      help-command:
+        - ""
+        - " &fStatus: [&cNo questions registered//&a{1} question registered//&a{1} questions registered]&f."
+        - ""
+        - " [&a■ &7/{0} add: &fRegister a question.]"
+        - " [&a■ &7/{0} remove <id>: &fRemoves a question.]"
+        - " [&a■ &7/{0} list: &fLists your questions.]"
+        - " [&a■ &7/{0} recover: &fRecovers your account.]"
+        - ""
+
+    discord:
+      # Message sent when a user needs to confirm the Discord account.
+      confirm-account:
+        - ""
+        - " &7To complete the linking, you need to confirm your Discord account."
+        - " &7Join to &b{0} &7and type "
+        - " &7the command in the DM of the &f{1} &7bot."
+        - ""
+        - " [&aClick here to get the command with the token.]"
+        - ""
+
+      # Message sent when a user links his Discord account.
+      account-linked: "&aConfiguration in Discord successfully updated.\n&aYou have been linked with &f{0} &aaccount."
+
+    twitter:
+      # Message sent when the provided twitter is invalid.
+      invalid-account: "&cThe entered twitter is invalid."
+
+      # Message sent when the supplied twitter is the same as the server's.
+      server-twitter: "&cYou cannot use the server's twitter."
+
+    email:
+      # Message sent when the e-mail provided is invalid.
+      invalid-account: "&cThe entered email is invalid."
+
+      # Message sent when the supplied email is the same as the server's.
+      server-email: "&cYou cannot use the server's email."
+
+  premium-login:
+    # Message sent when a premium login notification is sent to the player.
+    question:
+      - ""
+      - " &eUtilisez-vous un compte premium?"
+      - " &7(après avoir accepté, vous devrez vous reconnecter)."
+      - ""
+      - "[&aOui//&cNon]"
+      - ""
+
+    # Message sent when the player's account is already premium.
+    already-premium: "&cVotre compte est déjà marqué comme premium."
+
+    # Message sent when the player starts the premium login challenge.
+    challenge-kick: "&7Pour confirmer que vous utilisez un &acompte premium&7, veuillez vous connecter à nouveau."
+
+  other-messages:
+    # Hover message: /login.
+    hover-message-login: "&7Cliquez ici pour terminer la commande et vous connecter rapidement."
+
+    # Hover message: /register.
+    hover-message-register: "&7Cliquez ici pour terminer la commande et vous inscrire rapidement."
+
+    # Command usage: /login
+    message-login: "&eUtilisez la commande &7/login <password>&e."
+
+    # Command usage: /register
+    message-register: "&eUtilisez la commande &7/register <password> <password>&e."
+
+    # Command usage: /changepassword
+    message-changepassword: "&eUtilisez la commande &7/changepassword <current password> <new password>&e."
+
+    # Command usage: /checkprofile
+    message-verify: "&eUtilisez la commande &7/checkprofile <player>&e."
+
+    # Command usage: /unregister
+    message-unregister: "&eUtilisez la commande &7/unregister <current password>&e."

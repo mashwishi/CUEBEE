@@ -1,0 +1,633 @@
+#          __             _
+#  _ __   / /  ___   __ _(_)_ __
+# | '_ \ / /  / _ \ / _` | | '_ \
+# | | | / /__| (_) | (_| | | | | |
+# |_| |_\____/\___/ \__, |_|_| |_|
+#                   |___/
+
+# Official website: https://www.nickuc.com
+# Discord: https://www.nickuc.com/discord
+
+# Do not change this setting.
+file-version: 2
+
+# Debug mode: It is used to correct problems in the plugin.
+debug-mode: false
+
+# Language of the plugin.
+languageFile: "messages_en.yml"
+
+# Settings related to the bungeecord system.
+# Bungeecord: the feature will be activated automatically if you enable 'bungeecord' in spigot.yml.
+Bungeecord:
+  # BungeeGuard configuration: BungeeGuard is a system created by lucko (https://github.com/lucko/BungeeGuard).
+  # nLogin only incorporates the use of this plugin with a PT-BR translation, in order to prevent malicious attacks.
+  bungeeguard:
+    # The BungeeGuard system fixes the security holes in IPWhitelist.
+    use-bungeeguard: true
+
+    # Only activate this option if your server connection is protected with a firewall.
+    connection-is-firewalled: false
+
+    # Tokens allowed: Which tokens will BungeeGuard allow?
+    # For more information, access the instructions: https://wwww.nickuc.com/wiki/nlogin-bungee
+    allowed-tokens: []
+
+  # Delay to send the authentication message to Bungeecord (in ticks)
+  # It is recommended to increase if you are experiencing communication problems with (Spigot -> Bungee)
+  plugin-auth-message-delay: 5
+
+  # Automatically connect in lobbies: this feature will make a player automatically connect to a server lobby when logging in.
+  # If you are not using the Bungeecord feature, this feature will not be activated.
+  server-redirect:
+    # Enable server redirect: enables the redirect system of lobby servers
+    enabled: false
+
+    # List of server(s) that players will connect to when logging in.
+    # If you enter more than one server, the connected server will be chosen randomly.
+    redirect-servers:
+      - "lobby1"
+      - "lobby2"
+
+    # Time to wait for the switch to the lobby (20 ticks equals 1 second).
+    # It is not possible to enter a value less than 15 ticks (0.75s).
+    switch-delay: 15
+
+    # Wait for all notifications to be read by the player before connecting.
+    wait-for-notifications: true
+
+# Database-related settings.
+Database:
+  # Defines the type of database. Valid values: [SQLITE or MYSQL].
+  database-type: SQLITE
+
+  # Connection pooling: increases the response speed of the connection in the remote database.
+  # Must be disabled if you use the same table as nLogin for another function.
+  connection-pooling: true
+
+  # Plugin column naming settings.
+  table:
+    # Name given to nLogin's main table.
+    table-name: "nlogin"
+
+    # Name of the nLogin columns. Do not change the data below if you do not know what you are doing:
+    columns-name:
+      # Column of ids
+      id: "id"
+      # Column for users
+      name: "name"
+      # Column for users (real name)
+      realname: "realname"
+      # Column for unique id
+      uniqueId: "uniqueId"
+      # Column for premium id
+      premiumId: "premiumId"
+      # Column for passwords
+      password: "password"
+      # Column for ips addresses
+      address: "address"
+      # Column for registration date
+      regdate: "regdate"
+      # Column for last login date
+      lastlogin: "lastlogin"
+      # Column to save Email
+      email: "email"
+      # Column to save Twitter
+      twitter: "twitter"
+      # Column to save Discord
+      discord: "discord"
+      # Column used for player settings
+      settings: "settings"
+
+  # Database settings.
+  SQLITE:
+    # Choose here the name of the SQLITE database. Do not change this information if you do not know what you are doing
+    database-filename: "accounts.db"
+
+  MYSQL:
+    # Insert here the ip address of your MySQL.
+    connection-address: "localhost:3306"
+
+    # Enter here the database that MySQL will be used.
+    connection-database: "nLogin"
+
+    # Insert here the user for MySQL connection.
+    connection-user: "root"
+
+    # Enter password here for MySQL authentication.
+    connection-password: ""
+
+    # MySQL advanced settings
+    advanced:
+      # Choose here the address for MySQL connection.
+      # The value below will replace the ip address and database configuration.
+      # Do not change this information if you do not know what you are doing
+      connection-url: "jdbc:mysql://localhost:3306/nLogin"
+
+# Security system related settings.
+Security:
+  # Hide items before logging in.
+  inventory-hider-before-login: true
+
+  # Hides items faster, but can cause problems with some plugins.
+  fast-inventory-hider: true
+
+  # Prohibits a user with the same ip address from registering many times.
+  address-limiter:
+    enable: true
+
+    # Sets maximum number of login/registers by an ip address.
+    limit: 1
+
+    # List of ips that pass the ips limit (useful for servers with Geyser).
+    bypass:
+      - '127.0.0.1'
+      - 'localhost'
+
+  # This feature hides from other players, those who have not yet fully authenticated.
+  # This feature avoids bugs before login and prevents spam from bots.
+  hide-players-before-login: true
+
+  # This feature blocks the movement before it logs on.
+  # By disabling the feature below, you can move before logging in/registration.
+  block-player-walk: true
+
+  # Amount of time for a player to log in/register (set in seconds).
+  time-to-login: 45
+
+  # This is the maximum number of attempts a player can make to authenticate.
+  # If you use the value 1, the player will be kicked immediately.
+  max-login-tries: 1
+
+  # Sends the message that the server is concerned about the player's privacy.
+  warn-privacy-status: true
+
+  # Disable nLogin high-risk commands in-game.
+  # This helps to avoid problems with hacking.
+  disable-high-risk-commands: true
+
+  # Regex for checking valid nicknames.
+  #nickname-regex: '([a-zA-Z0-9_]{3,16})|(\*[a-zA-Z0-9_]{4,17})'
+  nickname-regex: '.*'
+
+  # Behavior settings.
+  behavior:
+    # This feature prevents account-stealing attacks.
+    # After several login attempts, the suspicious ip address will be blocked.
+    punish-many-wrong-password-tries: true
+
+    # Set here the time you want the ip address to be blocked (set in minutes).
+    punish-duration-minutes: 15
+
+  insecure-passwords:
+    # Warns the user if there are unsafe passwords in their account.
+    warning: true
+
+    # Detection information for weak password:
+    # Enter '1' to mark weak passwords without letters [abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]
+    # Enter '2' to dial weak passwords without numbers [0123456789]
+    # Enter '3' to mark weak passwords without symbols [!@#$%&*()-_]
+    level: "123"
+
+  password:
+    # Define here what type of hash algorithm nLogin will use.
+    # Valid values [ARGON2D, ARGON2I, ARGON2ID, BCRYPT, BCRYPT2Y, MD5, PBKDF2, SHA256, SHA512].
+    hash-algorithm: "BCRYPT"
+
+    # Bcrypt settings.
+    bcrypt:
+      rounds: 10
+
+    # Argon2 settings.
+    argon2:
+      iterations: 10
+      memory: 64
+      parallelism: 1
+
+    # Small password size.
+    small: 5
+
+    # Size for big passwords.
+    large: 15
+
+  security-question:
+    enabled: true
+
+    # Number of minimum questions to be registered (min. 3).
+    reg-answers: 4
+
+    # Questions to be asked (min. 4).
+    questions:
+      - "What is your favorite pet's name?"
+      - "What is your favorite movie?"
+      - "What is your favorite activity?"
+      - "What is your favorite restaurant?"
+      - "What is the name of your favorite cartoon?"
+      - "What is the name of the first school you attended?"
+      - "What is your best friend's first name?"
+      - "What was the first name of your first girl/boyfriend?"
+      - "What was the name of your first stuffed animal?"
+      - "What is your mother's middle name?"
+      - "What is your father's middle name?"
+      - "In what city did your parents meet?"
+      - "In what hospital were you born?"
+      - "What is your favorite team?"
+      - "What was your first gaming console?"
+      - "What was the first book you ever read?"
+      - "What is your least favorite food?"
+      - "What is your favorite ice cream flavor?"
+      - "What is your favorite place to visit?"
+      - "What is your dream job?"
+      - "What is your lucky number?"
+
+# Settings related to the plugin's features.
+Resources:
+  # This feature allows you to view messages on screen.
+  use-title-bar: true
+
+  # This feature adds actionbars to the server.
+  use-action-bar: true
+
+  # This feature will block the command '/execute'.
+  disable-execute-command: true
+
+  # Add Minecraft sounds to nLogin functions.
+  use-sounds: true
+
+  # Remaining time counter: The counter appears in actionbar form (set in seconds).
+  actionbar-counter: true
+
+  # ChatComponent: This feature allows you to view interactive messages with the client.
+  use-chat-component: true
+
+  join:
+    # This feature will clear your chat when you log on to the server.
+    clean-chat-on-join: true
+
+    # This feature will remove the default input message from the minecraft.
+    remove-join-message: true
+
+  teleport:
+    # SafeTeleport: Teleports the player to a safe location.
+    # Can be activated in case of player 'bugar' problems in a block.
+    safe-location: false
+
+    # Teleports the player to the last location when logging out.
+    last-location: true
+
+    # Teleports the player to the spawn on death.
+    teleport-on-death: true
+
+  # Paid plugin features.
+  premium:
+    # This feature makes users who use the original minecraft unnecessary to authenticate.
+    # It is recommended to enable, but in case of connection problems with Mojang, you can avoid player login.
+    auto-premium-login: true
+
+    # This feature will replace the uuid of the pirated account with the original uuid.
+    # WARNING: This feature can cause loss of items if the old uuid is pirated.
+    premium-uuid: true
+
+    # The session system makes it easy to log in to the server, automatically logging in a user with the same registered ip address.
+    session: true
+
+    # Define if the session system will only work if the login is done in X minutes after the last login.
+    # To disable the time between one session and another, enter the value 0.
+    session-duration: 15
+
+  # Advanced plugin features.
+  advanced:
+    # Unrestricted names: This feature makes the nicks below unnecessary to authenticate.
+    # WARNING: Use this feature at your own risk.
+    unrestricted-names: []
+
+    # Unrestricted inventories: This feature does not block certain inventories before login.
+    unrestricted-inventories: []
+
+    # Client related resources (player).
+    client:
+      # Adapts nLogin language according to the client of the person accessing.
+      # If you disable this feature, the language sent will depend on the one configured here.
+      language-by-client: false
+
+      # Hides and restores player information (such as speed, flight mode, life, food level, etc.)
+      restore-player-stats: true
+
+      # Time for player information to be hidden.
+      # This value must be done in ticks (20 ticks equals 1 second).
+      restore-player-stats-delay: 7
+
+      # In-game advertisements (only admins).
+      advertising: true
+
+      # Insert here the list of commands to be executed after registering.
+      commands-after-register: []
+
+      # Insert here the list of commands to be executed after logging in.
+      commands-after-login: []
+
+      # Insert here the list of commands allowed to be used before any type of authentication.
+      # To change the type of command allowed, place the command with bar in the list below.
+      allowed-commands-before-login:
+        - "/loginstaff"
+
+  # List of nLogin commands
+  commands:
+    changepassword:
+      enabled: true
+      commands: [changepassword, changepass]
+      description: Command to change the password.
+    checkprofile:
+      enabled: true
+      commands: [checkprofile]
+      description: Command to check player data.
+    cracked:
+      enabled: true
+      commands: [cracked]
+      description: Command to mark your account as cracked.
+    discord:
+      enabled: true
+      commands: [discord]
+      description: Command to configure discord.
+    dupeip:
+      enabled: true
+      commands: [dupeip]
+      description: Command to check duplicate ips.
+    email:
+      enabled: true
+      commands: [email]
+      description: Command to configure email.
+    login:
+      enabled: true
+      commands: [login, l, log]
+      description: Command to login on the server.
+    premium:
+      enabled: true
+      commands: [premium]
+      description: Command to mark your account as premium.
+    register:
+      enabled: true
+      commands: [register, reg]
+      description: Command to register an account.
+    squestion:
+      enabled: true
+      commands: [sq, squestion, securityquestion]
+      description: Command to configure security questions.
+    twitter:
+      enabled: true
+      commands: [twitter]
+      description: Command to configure twitter.
+    unregister:
+      enabled: false
+      commands: [unregister]
+      description: Command to unregister.
+
+# Settings related to the two-factor system by Twitter.
+Twitter:
+  # Use Twitter's two-factor system.
+  enabled: false
+
+  # Do you wish to alert users to activate protection?
+  warn-players: true
+
+  # Choose here what will be the method of connection to Twitter.
+  # Valid values [xauth, oauth, oauth2].
+  connection-type: oauth
+
+
+  ########### XAuth Method ###################
+  xauth:
+    # Enter the XAuth method user.
+    username: ""
+
+    # Enter the XAuth method password.
+    password: ""
+
+  ########### OAuth Method ################
+  oauth:
+    # Insert the consumer key of the OAuth method.
+    consumer-key: ""
+
+    # Insert the OAuth method consumer key (secret).
+    consumer-key-secret: ""
+
+    # Enter the OAuth method access token.
+    access-token: ""
+
+    # Enter the OAuth method access token (secret).
+    access-token-secret: ""
+
+
+  ########## OAuth Method 2 ##############
+  oauth2:
+    # Enter the access token for the OAuth 2 method.
+    access-token: ""
+
+  # Message sent when a user associates on Twitter.
+  configure-message:
+    - "The nLogin's system generated a temporary password for the @player account."
+    - ""
+    - "To confirm your account, use the '/twitter @code' command."
+    - "If it wasn't you, ignore this message."
+
+  # Message sent when a user logs in from a different ip address.
+  verify-message:
+    - "The nLogin's system has generated a confirmation password for the @player account."
+    - ""
+    - "To authenticate, use the '/twitter @code' command."
+    - "If it was not you, change your password IMMEDIATELY."
+
+  # Message sent when a user requests a password recovery.
+  recover-message:
+    - "To recover your account, use the command /twitter <new password> @code"
+    - ""
+    - "If it wasn't you, disregard this message."
+
+  # Message sent when a possible intruder is detected.
+  suspect-access-message:
+    - "The nLogin's system has detected suspicious activity on your @player account."
+    - ""
+    - "Date of attempt: @data @hora"
+    - ""
+    - "The ip address on this account has been temporarily banned on suspicion of intrusion."
+
+  # Message sent to users to activate Twitter security.
+  warn-message:
+    - ""
+    - " &7Perform the command &f/twitter associate &7to register"
+    - " &7your &ctwitter&7. By doing so, you"
+    - " &7decrease the chance of being hacked."
+    - ""
+
+  # Message sent to a user who logs on with a different ip address.
+  warn-change-address:
+    - ""
+    - "&aSorry, but a confirmation of identity is required."
+    - "&aA security code has been sent to your registered Twitter account."
+    - "&aUse the /twitter command <sent code> to authenticate."
+    - "&aIf you get the password wrong or you log out, a new code will be generated."
+    - ""
+    - "&7Remember to be following &f@twitter_sv &7no twitter."
+    - ""
+
+# Two-factor system-related settings by Email.
+Email:
+  # Use two-factor system by Email.
+  enabled: false
+
+  # Do you wish to alert users to activate protection?
+  warn-players: true
+
+  # Email connection settings.
+  connection:
+    # Email
+    email: "email@gmail.com"
+    # Password
+    password: "123456"
+
+    # Smtp host
+    host: "smtp.gmail.com"
+    # Smtp port
+    port: 587
+    # Use ssl?
+    ssl: true
+    # Debug mode
+    debug: false
+
+  # Message sent when a user associates in the Email.
+  configure-message:
+    - "<h1>"
+    - " Hello, @player!"
+    - "</h1>"
+    - "<p>"
+    - " To complete your email registration process, use the command <strong>/email @code</strong>."
+    - "</p>"
+    - "<p>"
+    - " If it wasn't you, ignore this message."
+    - "</p>"
+
+  # Message sent when a user logs in from a different ip address.
+  verify-message:
+    - "<h1>"
+    - " Hello, @player!"
+    - "</h1>"
+    - "<p>"
+    - " To authenticate on the server, use the command <strong>/email @code</strong>."
+    - "</p>"
+    - "<p>"
+    - " If it was not you, change your password <strong>IMMEDIATELY</strong>."
+    - "</p>"
+
+  # Message sent when a user requests a password recovery.
+  recover-message:
+    - "<h1>"
+    - " Hello, @player!"
+    - "</h1>"
+    - "<p>"
+    - " To recover your account, use the command <strong>/email <new password> @code</strong>."
+    - "</p>"
+    - "<p>"
+    - " If it wasn't you, disregard this message."
+    - "</p>"
+
+  # Message sent when a possible intruder is detected.
+  suspect-access-message:
+    - "<h1>"
+    - " Hello, @player!"
+    - "</h1>"
+    - "<p>"
+    - " nLogin's system detected a suspicious activity on your account."
+    - "</p>"
+    - "<p>"
+    - "<strong>Date of attempt:</strong> @data @hora"
+    - "</p>"
+    - "<p>"
+    - "The ip address has been temporarily banned on suspicion of invasion."
+    - "</p>"
+
+  # Message sent to users to enable Email security
+  warn-message:
+    - ""
+    - " &7Perform the command &f/email associate &7to register"
+    - " &7your &cemail&7. By doing so, you"
+    - " &7decrease the chance of being hacked."
+    - ""
+
+  # Message sent to a user who logs on with a different ip address.
+  warn-change-address:
+    - ""
+    - "&a Sorry, but a confirmation of identity is required."
+    - "&aA security code has been sent to your registered email address."
+    - "&aUse the command /email <sent code> to authenticate."
+    - "&aIf you get the password wrong or you log out, a new code will be generated."
+    - ""
+
+# Two-factor system-related settings by Discord.
+Discord:
+  # Use two-factor system by Discord.
+  enabled: false
+
+  # Do you wish to alert users to activate protection?
+  warn-players: true
+
+  # Put your bot token here
+  # Create an application at (https://discordapp.com/developers/applications/), activate your bot and insert your token.
+  bot-token: ""
+
+  # Put here the invite link from your server
+  # This data will be needed to complete an authentication.
+  link-discord: "yourlink"
+
+  # Profile presence message
+  presence: "Access our server now: yourserver.com"
+
+  # Message sent when a user joins Discord.
+  verify-message:
+    title: "Your password has been created"
+    description: "nLogin's system generated a confirmation password for the @player account."
+    fields:
+      - "Command->To authenticate, use the command '/discord @code'."
+
+  # Message sent when a user requests a password recovery.
+  recover-message:
+    title: "Password recovery requested."
+    description: "A password recovery request has been requested for the @player.\nIf it was not you, click on the X reaction to block access."
+    fields:
+      - "Problems?->In case of problems, use the '/discord <new password> @code' command."
+
+  # Message sent when a possible intruder is detected.
+  suspect-access:
+    title: "Suspicious activity on the @player account."
+    description: "A suspicious login has been detected in the @player account."
+    fields:
+      - "Access data->Date of attempt: @data @hora"
+      - "Access Information->IP Address: @address"
+      - "The possible invader has been banned->The ip address on this account has been temporarily banned on suspicion of invasion."
+
+  # Message sent to users to enable security by Discord
+  warn-message:
+    - ""
+    - " &7Perform the command &f/discord associate &7to register"
+    - " &7your &cdiscord&7. By doing so, you"
+    - " &7decrease the chance of being hacked."
+    - ""
+
+  # Message sent when users are registering their Discord account.
+  sync-message:
+    invalid-code:
+      title: "***Sign up your Discord***"
+      description: "Sorry, but the token you entered is invalid or does not exist."
+      fields: []
+    success:
+      title: "***Sign up your Discord***"
+      description: "Your Discord was successfully registered."
+      fields: []
+
+  # Message sent to a user who logs on with a different ip address.
+  warn-change-address:
+    - ""
+    - "&aSorry, but a confirmation of identity is required."
+    - "&aA security code has been sent to your registered disagreement."
+    - "&aUse the /discord <sent code> command to authenticate yourself."
+    - "&aIf you get the password wrong or you log out, a new code will be generated."
+    - ""

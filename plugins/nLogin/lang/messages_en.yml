@@ -1,0 +1,495 @@
+#          __             _
+#  _ __   / /  ___   __ _(_)_ __
+# | '_ \ / /  / _ \ / _` | | '_ \
+# | | | / /__| (_) | (_| | | | | |
+# |_| |_\____/\___/ \__, |_|_| |_|
+#                   |___/
+
+# Official Website: https://www.nickuc.com
+# Discord: https://www.nickuc.com/discord
+
+# Do not change this setting
+file-version: 2
+
+Messages:
+  Title:
+    # Message sent before login.
+    before-login:
+      title: "&9&lCuebee"
+      subtitle: "&7/login <your password>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Message sent before registration
+    before-register:
+      title: "&9&lCuebee"
+      subtitle: "&7/register <your password> <your password>"
+      delays:
+        start: 0
+        duration: 9999
+        end: 6
+    # Message sent after login.
+    after-login:
+      title: ""
+      subtitle: "&aYou have successfully logged!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent after registration.
+    after-register:
+      title: ""
+      subtitle: "&aYou have successfully registered!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when you miss a password.
+    incorrect-password:
+      title: ""
+      subtitle: "&cIncorrect password!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when already logged in.
+    already-login:
+      title: ""
+      subtitle: "&cYou are already logged in!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when already registered.
+    already-registered:
+      title: ""
+      subtitle: "&cYou are already registered!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when passwords are not equal.
+    passwords-dont-match:
+      title: ""
+      subtitle: "&cPasswords are not the same!"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when session is continued.
+    session-login:
+      title: ""
+      subtitle: "&eYour login session has been continued."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when you are an original player.
+    premium-login:
+      title: ""
+      subtitle: "&eYour account is unique, successfully logged in."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent when a login session is continued.
+    plugin-reload:
+      title: ""
+      subtitle: "&aThe configuration and language files have been reloaded."
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+    # Message sent from backup system.
+    backup:
+      title: ""
+      subtitle: "&aBackup performed successfully."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Message sent from backup system.
+    backup-error:
+      title: ""
+      subtitle: "&cUnable to perform backup."
+      delays:
+        start: 0
+        duration: 90
+        end: 6
+    # Message sent from security system.
+    security-warning:
+      title: ""
+      subtitle: "&cA new security alert has been sent in the chat"
+      delays:
+        start: 0
+        duration: 60
+        end: 6
+
+  action-bar:
+    # Message sent on the player's actionbar before login (singular).
+    singular: "&cYou have {0} second to {login/register}."
+
+    # Message sent on the player's actionbar before login (plural).
+    plural: "&cYou have {0} seconds to {login/register}."
+
+  delay-kick:
+    # Message sent when a user takes a long time to register.
+    register-kick: "&cYou took too long to register."
+
+    # Message sent when a user takes a long time to log in.
+    login-kick: "&cYou took too long to login."
+
+  successful-operations:
+    # Message when a user exchanges their password.
+    password-changed: "&aYour password has been successfully changed."
+
+    # Message sent when a user successfully logs.
+    successful-login: "&aYou have successfully logged."
+
+    # Message sent when a user logs in with an original account.
+    successful-premium-login: "&aYou are automatically logged in as you are using an unique account."
+
+    # Message sent when a user logs in using the same ip address.
+    successful-session-login: "&aYour login session has been continued."
+
+    # Message sent when a user successfully registers.
+    successful-register: "&aYou have successfully registered."
+
+    # Message sent when you force a player's login.
+    forcelogin: "&eYou have forced the login of {0}"
+
+    # Message sent when a player successfully unregister.
+    unregister-kick: "&aYou have been successfully unregistered."
+
+    # Message sent when a configuration is finished
+    config-finished: "&aConfiguration finalized."
+
+    # Message sent when a configuration is cancelled
+    config-cancelled: "&cAction cancelled."
+
+  kick-messages:
+    # Message when a player tries to log on to the server with a small difference in the nickname.
+    nick-already-registered: "&cYou can not enter with the nickname {0}&r\n&r&cThis username has already been registered as {1}&r\n&r\n&r&cTo enter, you must use your nickname without uppercase/lowercase"
+
+    # Message sent when a user misses many times.
+    failed-many-times: "&cYou entered the incorrect password."
+
+    # Message sent when password entered is incorrect.
+    incorrect-password: "&cIncorrect password. Please, try again."
+
+    # Message sent when the security questions answer is incorrect.
+    incorrect-answer: "&cIncorrect answer. Please try again."
+
+    # Message sent when server is still starting.
+    wait-server-start: "&cThe server has not yet started completely.\n&cWait a while to connect."
+
+    # Message sent when an IP is blocked by suspected invasion.
+    account-blocked: "&cYour address has been blocked by suspected invasion.&r\n&r&cRemaining banishment time: {0}"
+
+    # Message sent when two-factor system temporary password is incorrect.
+    incorrect-temporary-password: "&cIncorrect password. Please, try again."
+
+    # Message to kick a user with an invalid nickname.
+    invalid-nickname: "&cYour nickname is invalid, remove spaces, symbols, and invalid characters from your name."
+
+    # Message sent when the player's account has already been registered as unique.
+    premium-account: "&cSorry, but a premium user has already logged in to this account.&r\n&r&cTo play on the server, you must use another nickname.&r\n&r\nIf you are the owner of this account, try restarting your Minecraft."
+
+  security-messages:
+    # Message sent when a user was protected by the heuristic system.
+    hacking-attack-warning:
+      - ""
+      - " &c&lSECURITY ALERT"
+      - " &cThe security system has blocked a possible hacking attack on your account."
+      - " &cThree unsuccessful login attempts were made."
+      - ""
+      - " &e&lTIP: &eAlways use different passwords from other servers."
+      - ""
+
+    # Message sent when a user was protected more than once by the heuristic system.
+    hacking-attack-warning2:
+      - ""
+      - " &c&lSECURITY ALERT"
+      - " &cThe security system has blocked {0} possible hacking attacks on your account."
+      - " &cThree unsuccessful login attempts were made."
+      - ""
+      - " &e&lTIP: &eAlways use different passwords from other servers."
+      - ""
+
+    # Message sent when a user uses a weak password.
+    weak-password:
+      - ""
+      - " &cThe registered password is considered unsafe."
+      - " &cUse letters, numbers, and symbols to improve security."
+      - " &cExample password: {0}"
+      - ""
+
+    # Message sent when a player has not yet registered the security questions.
+    security-question-warn-message:
+      - ""
+      - " &c&lSECURITY QUESTIONS"
+      - " &7Perform the command &f/sq add &7to register your"
+      - " &csecurity questions&7. By doing so, you"
+      - " &7decrease the chance of being hacked."
+      - ""
+
+    # Message sent when a security question is being added.
+    security-question-add:
+      - ""
+      - " &e{0}"
+      - ""
+      - " &7Type &f'cancel' &7to cancel the operation."
+      - " &7Click this message to generate another question."
+      - ""
+
+    # Message sent when a security question should be reviewed.
+    security-question-check:
+      - ""
+      - " &aBefore confirming, check the information:"
+      - ""
+      - " &7{0}: &f'{1}'"
+      - ""
+      - " &aIf you are sure, type &f'confirm'&a."
+      - " &eIf you entered something wrong, type &f'repeat'&e."
+      - " &cIf you want to cancel this operation, type &f'cancel'&c."
+      - ""
+
+    # Message sent when security questions are requested.
+    security-question-request:
+      - ""
+      - " &aSorry, but an identity confirmation is required."
+      - " &aAnswer the question below in the chat:"
+      - ""
+      - " &b{0}"
+      - ""
+
+    # Message sent when security questions are requested a second time.
+    security-question-request2:
+      - "&aNext question..."
+      - ""
+      - " &b{0}"
+      - ""
+
+  notifications:
+    # Message sent when all notifications have been read.
+    all-viewed: "&aAll notifications have been viewed."
+
+    # Message sent when the notification will be sent after X minutes.
+    notify-after: "&eThis notification will be sent again after {0} minutes."
+
+    # Name of the buttons sent in the notifications.
+    notify-buttons: "[&aConfirm read//&8Remind me later]"
+
+    # Message when hovering over the buttons sent in the notifications.
+    notify-buttons-hover: "[&7Click to mark this notification as read.//&7Click to remember this notification later.]"
+
+  error-messages:
+    # Message sent when you are already logged in.
+    already-login: "&cYou are already logged in."
+
+    # Message sent when a user is already logged in.
+    already-login2: "&cThis player is already logged in."
+
+    # Message sent when a nickname has already been registered.
+    already-registered: "&cThis nickname has already been registered."
+
+    # Message sent when a nickname has not yet been registered.
+    not-registered: "&cThis nickname has not yet been registered."
+
+    # Message sent when the entered password is not equal to the second.
+    passwords-dont-match: "&cPasswords are not the same."
+
+    # Message sent when a player does not confirm your password.
+    need-password-confirmation: "&cYou must confirm your password."
+
+    # Message sent when IP limits per player pass the limit.
+    address-limiter-warning: "&cYou have exhausted the account limits per ip."
+
+    # Message sent when a player tries to change password by entering the same password as the current.
+    password-same-as-old: "&cThe password entered is the same as the current."
+
+    # Message sent when the password entered is too large.
+    password-too-large: "&cThe password entered is too large."
+
+    # Message sent when the password entered is too small.
+    password-too-small: "&cThe password entered is too small."
+
+    # Message sent when a user attempts to disable nLogin using PlugMan/System.
+    plugman-block: "&cYou can not touch the login plugin here."
+
+    # Message when a player does not possess the required permission.
+    insufficient-permissions: "&cYou do not have permission to run this command."
+
+    # Message to show the use of a command.
+    command-usage: "&cYou must use {0}."
+
+    # Message to kick a player now online.
+    already-online: "&cThis player is already online."
+
+    # Message to display that a player is not online.
+    offline-error: "&cThe desired player is offline."
+
+    # Message to show that the command cannot be executed via console.
+    player-command-usage: "&cThis command has been disabled via console."
+
+    # Message to show that a command can only be executed by the console.
+    console-command-usage: "&cThis command can only be used via the console."
+
+    # Message shown when the plugin is reloaded.
+    plugin-reload-message: "&eThe plugin has been successfully reloaded."
+
+    # Message shown when the function of a command is disabled.
+    command-function-disabled: "&cThe function of the command {0} is disabled."
+
+    # Message sent when a database operation has not been successfully performed.
+    database-error: "&cSorry, we were unable to complete this operation. Please try again. [SQL FAIL]"
+
+  twofactor:
+    # Message sent when a user does not have a temporary password.
+    no-temporary-password: "&cA temporary password has not yet been generated."
+
+    # Message sent when a user does not have a linked account.
+    no-twofactor-registered: "&cYou do not have a {0} account."
+
+    # Message sent when a user has already linked an account.
+    twofactor-already-registered: "&cYou have already registered your {0}."
+
+    # Message sent when a user removes their account from two factors.
+    twofactor-unregistered: "&eYour {0} was successfully disassociated"
+
+    # Message sent when a user confirms their two-factor account.
+    confirmed-account: "&aYour {0} account has been successfully registered"
+
+    # Message sent when a confirmation message is sent.
+    confirmation-message-sent: "&7A confirmation code was sent to your {0} (&f{1}&7)."
+
+    # Message sent when a user requests a new message in a short period of time.
+    check-message: "&aCheck the message sent to your associated account."
+
+    # Message sent when the player must wait to use the command again.
+    command-delay: "&cWait a while before executing this command again."
+
+    # Two-factor help message.
+    help-command:
+      - ""
+      - " &fStatus: [&a{2} registered//&c{2} not registered]&f."
+      - ""
+      - " [&a■ &7/{0} add: &fRegister your {1}.]"
+      - " [&a■ &7/{0} remove: &fRemove your {1}.]"
+      - " [&a■ &7/{0} recover: &fRecover your account.]"
+      - " [&a■ &7/{0} twofactor: &fEnables/disables the two-factor.]"
+      - ""
+
+    switch:
+      # Message sent when a user activates the two-factor.
+      enabled: "&aThe two-factor feature has been activated."
+
+      # Message sent when a user disables the two-factor.
+      disabled: "&cThe two-factor feature has been deactivated."
+
+    recover:
+      # Message sent when a user does not provide the same two-factor account registered.
+      twofactor-not-equal: "&cThe {0} provided is not the same as the registered one."
+
+      # Message sent when a user requests a recovery request in a short period of time.
+      message-sent: "&aA recovery message was sent to your associated account."
+
+      # Message sent when a user recovers his account and his password is set automatically.
+      automatic-change: "&aYour password was automatically changed to &f'{0}'&a."
+
+    security-questions:
+      # Message sent when a user has not registered any security questions yet.
+      no-question-registered: "&cYou have not yet registered any security questions."
+
+      # Message sent when the question id is invalid.
+      invalid-question-id: "&cThe id entered is not valid or is less than or equal to zero."
+
+      # Message sent when a question does not exist.
+      question-does-not-exists: "&cThe question with the id {0} does not exist."
+
+      # Message sent when a question is deleted.
+      question-deleted: "&aThe question with the id {0} has been successfully removed."
+
+      # Message sent when a user has exhausted the maximum of security questions registered.
+      max-questions: "&cYou have exhausted the limit of security questions allowed on this server."
+
+      # Message sent when a user does not have the minimum security questions registered to recover the account.
+      min-questions-recover: "&cYou need to have at least 3 questions registered to recover your account."
+
+      # Security questions help message
+      help-command:
+        - ""
+        - " &fStatus: [&cNo questions registered//&a{1} question registered//&a{1} questions registered]&f."
+        - ""
+        - " [&a■ &7/{0} add: &fRegister a question.]"
+        - " [&a■ &7/{0} remove <id>: &fRemoves a question.]"
+        - " [&a■ &7/{0} list: &fLists your questions.]"
+        - " [&a■ &7/{0} recover: &fRecovers your account.]"
+        - ""
+
+    discord:
+      # Message sent when a user needs to confirm the Discord account.
+      confirm-account:
+        - ""
+        - " &7To complete the linking, you need to confirm your Discord account."
+        - " &7Join to &b{0} &7and type "
+        - " &7the command in the DM of the &f{1} &7bot."
+        - ""
+        - " [&aClick here to get the command with the token.]"
+        - ""
+
+      # Message sent when a user links his Discord account.
+      account-linked: "&aConfiguration in Discord successfully updated.\n&aYou have been linked with &f{0} &aaccount."
+
+    twitter:
+      # Message sent when the provided twitter is invalid.
+      invalid-account: "&cThe entered twitter is invalid."
+
+      # Message sent when the supplied twitter is the same as the server's.
+      server-twitter: "&cYou cannot use the server's twitter."
+
+    email:
+      # Message sent when the e-mail provided is invalid.
+      invalid-account: "&cThe entered email is invalid."
+
+      # Message sent when the supplied email is the same as the server's.
+      server-email: "&cYou cannot use the server's email."
+
+  premium-login:
+    # Message sent when a premium login notification is sent to the player.
+    question:
+      - ""
+      - " &eAre you using a premium account?"
+      - " &7(after accepting, you will need to re-join.)"
+      - ""
+      - "[&aYes//&cNo]"
+      - ""
+
+    # Message sent when the player's account is already premium.
+    already-premium: "&cYour account is already marked as premium."
+
+    # Message sent when the player starts the premium login challenge.
+    challenge-kick: "&7To confirm that you are using a &apremium account&7, please log in again."
+
+  other-messages:
+    # Hover message: /login.
+    hover-message-login: "&7Click here to complete the command and log in quickly."
+
+    # Hover message: /register.
+    hover-message-register: "&7Click here to complete the command and register quickly."
+
+    # Command usage: /login
+    message-login: "&eUse the command &7/login <password>&e."
+
+    # Command usage: /register
+    message-register: "&eUse the command &7/register <password> <password>&e."
+
+    # Command usage: /changepassword
+    message-changepassword: "&eUse the command &7/changepassword <current password> <new password>&e."
+
+    # Command usage: /checkprofile
+    message-verify: "&eUse the command &7/checkprofile <player>&e."
+
+    # Command usage: /unregister
+    message-unregister: "&eUse the command &7/unregister <current password>&e."
