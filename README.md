@@ -50,7 +50,7 @@
 <h2 align="center">Setup Tutorial</h2>
 
 <div align="center">
-<p>Recommended Hosting (Not officially endorsed or sponsored by Pebblehost)</p>
+<p>Recommended Hosting (<i>This is affiliated link, Not officially endorsed or sponsored by Pebblehost</i>)</p>
   <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting" src="https://pebblehost.com/src/img/branding/banner1.gif"></a>
 </div>
 
@@ -111,7 +111,7 @@ CUEBEE Made by Mashwishi, project [Here](https://github.com/Mashwishi/CUEBEE)
 ---
 
 <div align="center">
-<p>Recommended Hosting (Not officially endorsed or sponsored by Pebblehost)</p>
+<p>Recommended Hosting (<i>This is affiliated link, Not officially endorsed or sponsored by Pebblehost</i>)</p>
   <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting" src="https://pebblehost.com/src/img/branding/banner1.gif"></a>
 </div>
 
